@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanki Dendy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="frame">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Arcade</p>
+            <h1>РўР°РЅС‡РёРєРё</h1>
+          </div>
+          <div class="scoreboard">
+            <div class="stat">
+              <span>P1</span>
+              <strong id="p1-lives">3</strong>
+            </div>
+            <div class="stat">
+              <span>P2</span>
+              <strong id="p2-lives">3</strong>
+            </div>
+            <div class="stat">
+              <span>Р’СЂР°РіРё</span>
+              <strong id="enemies">20</strong>
+            </div>
+            <div class="stat">
+              <span>РЎС‡С‘С‚</span>
+              <strong id="score">0</strong>
+            </div>
+            <div class="stat">
+              <span>РЈСЂРѕРІРµРЅСЊ</span>
+              <strong id="level">1/3</strong>
+            </div>
+          </div>
+        </header>
+
+        <div class="playfield">
+          <div class="monitor">
+            <div class="bezel">
+              <canvas id="game" width="832" height="832" aria-label="РРіСЂР° РўР°РЅС‡РёРєРё"></canvas>
+              <div class="crt crt-scanlines"></div>
+              <div class="crt crt-glow"></div>
+            </div>
+            <div class="monitor-meta">
+              <span>8-BIT BATTLE DISPLAY</span>
+              <span>DUAL ARCADE MODE</span>
+            </div>
+          </div>
+
+          <aside class="sidebar">
+            <div class="panel">
+              <h2>РЈРїСЂР°РІР»РµРЅРёРµ</h2>
+              <p><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> РёР»Рё СЃС‚СЂРµР»РєРё</p>
+              <p><kbd>Space</kbd> РІС‹СЃС‚СЂРµР» P1</p>
+              <p><kbd>I</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd> РґРІРёР¶РµРЅРёРµ P2</p>
+              <p><kbd>Enter</kbd> РІС‹СЃС‚СЂРµР» P2</p>
+              <p><kbd>R</kbd> СЂРµСЃС‚Р°СЂС‚</p>
+            </div>
+            <div class="panel">
+              <h2>Р—Р°РґР°С‡Р°</h2>
+              <p>Р—Р°С‰РёС‰Р°Р№С‚Рµ Р±Р°Р·Сѓ, Р»РѕРІРёС‚Рµ Р±РѕРЅСѓСЃС‹, РїСЂРѕС…РѕРґРёС‚Рµ СѓСЂРѕРІРЅРё Рё РЅРµ РґР°Р№С‚Рµ РІСЂР°РіР°Рј РїСЂРѕР±РёС‚СЊСЃСЏ Рє РѕСЂР»Сѓ.</p>
+            </div>
+            <div class="panel">
+              <h2>РЎС‚Р°С‚СѓСЃ</h2>
+              <p id="message">РЈРЅРёС‡С‚РѕР¶СЊ РІСЃРµ РІСЂР°Р¶РµСЃРєРёРµ С‚Р°РЅРєРё.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+  </html>
